@@ -10,9 +10,6 @@ import "./App.css";
 
 function App() {
   const apikey = import.meta.env.VITE_API_KEY;
-
-  console.log(apikey);
-
   const openai = new OpenAI({
     apiKey: apikey,
     dangerouslyAllowBrowser: true,
