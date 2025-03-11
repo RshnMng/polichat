@@ -9,7 +9,7 @@ import OpenAI from "openai";
 import "./App.css";
 
 function App() {
-  const apikey = import.meta.env.OPENAI_API_KEY;
+  const apikey = import.meta.env.VITE_API_KEY;
 
   console.log(apikey);
 
