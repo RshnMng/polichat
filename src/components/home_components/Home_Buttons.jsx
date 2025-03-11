@@ -2,11 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Home_Buttons(props) {
-  const state = props.props;
-  const fetchResponse = props.props.fetchResponse;
-  const resetLangs = props.props.resetLangs;
-
-  console.log(props);
+  const state = props.props.props.state;
+  const fetchResponse = state.fetchResponse;
+  const resetLangs = state.resetLangs;
 
   const messages = [
     {

@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 
 export default function Home_LangSelect(props) {
-  const state = props.props;
+  const state = props.props.props.state;
   const updateLanguage = state.updateLanguage;
   const addSelected = state.addSelected;
 

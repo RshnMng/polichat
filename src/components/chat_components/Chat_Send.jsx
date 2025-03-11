@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 
 export default function Chat_Send(props) {
-  const state = props.props;
+  const state = props.props.state.state;
   const addToChatLog = state.addToChatLog;
   const userInput = state.userInput;
   const userInputObj = { role: "user", content: userInput };

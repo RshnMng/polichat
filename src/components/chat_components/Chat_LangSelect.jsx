@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Chat_LangSelect(props) {
-  const state = props.props;
+  const state = props.props.state.state;
   const updateLanguage = state.updateLanguage;
   const addSelected = state.addSelected;
   return (

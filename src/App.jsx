@@ -145,6 +145,8 @@ function App() {
       });
     },
   });
+
+  const props = { state, setState };
   return (
     <>
       <div className="check"></div>
@@ -153,9 +155,9 @@ function App() {
           <BrowserRouter>
             <Routes>
               <Route path="/" element={<Layout />}>
-                <Route index element={<Home props={{ state }} />} />
-                <Route path="/translation" element={<Translation_Page props={{ setState }} />} />
-                <Route path="/chat" element={<Chat_Page props={{ setState, state }} />} />
+                <Route index element={<Home props={props} />} />
+                <Route path="/translation" element={<Translation_Page props={props} />} />
+                <Route path="/chat" element={<Chat_Page props={props} />} />
               </Route>
             </Routes>
           </BrowserRouter>

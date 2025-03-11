@@ -1,7 +1,7 @@
 import React from "react";
 
-export default function Home_Flagbox(props) {
-  const state = props.props.state;
+export default function Original_Flagbox(props) {
+  const state = props.props.props.props.state;
   const updateInputLang = state.updateInputLang;
 
   return (

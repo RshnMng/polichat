@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import Home_Flagbox from "../home_components/Home_Flagbox";
+import Original_Flagbox from "../translate_components/Original_FlagBox";
 
 export default function Original_Text(props) {
-  const state = props.props;
+  const state = props.props.props.state;
   const input = state.userInput;
   const updateInput = state.updateInput;
 
@@ -12,7 +12,7 @@ export default function Original_Text(props) {
         <div className="row home-input-row mt-2 ">
           <div className="col-12 d-flex col-lg-offset-3 mb-2 home-title">
             <div className="col-2 offset-1  pr-5 flagbox-div">
-              <Home_Flagbox props={{ props }} />
+              <Original_Flagbox props={props} />
             </div>
             <div className="col-9 col-md-12 mr-0 home-text">Original Text</div>
           </div>

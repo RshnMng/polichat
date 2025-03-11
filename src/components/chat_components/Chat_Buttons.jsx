@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Chat_Buttons(props) {
-  const state = props.props;
+  const state = props.props.state.state;
   const clearChat = state.clearChat;
   const resetLangs = state.resetLangs;
   return (
