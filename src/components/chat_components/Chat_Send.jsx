@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 
 export default function Chat_Send(props) {
-  const state = props.props.state.state;
+  const state = props.props.state;
   const addToChatLog = state.addToChatLog;
   const userInput = state.userInput;
   const userInputObj = { role: "user", content: userInput };
@@ -62,6 +62,7 @@ export default function Chat_Send(props) {
     <>
       <div className="col-12 text-input-div">
         <input
+          autocomplete="off"
           id="text-input"
           className="text-input"
           type="text"

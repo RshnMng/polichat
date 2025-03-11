@@ -4,7 +4,7 @@ export default function Translation_Flagbox(props) {
   const state = props.props.props.props.state;
 
   const updateOutputLang = state.updateOutputLang;
-  const setState = props.props.setState;
+  const setState = props.props.props.props.setState;
 
   function clearTranslation() {
     return setState((prevState) => {

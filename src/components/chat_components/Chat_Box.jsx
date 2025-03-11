@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Chat_Box(props) {
-  const state = props.props.state.state;
+  const state = props.props.state;
   const chatComponents = state.chatComponents;
   let waiting = state.waiting;
 

@@ -11,13 +11,13 @@ export default function Chat_Page(props) {
     <>
       <div className="col-12 col-md-7 mr-5 chat-large-left">
         <Chat_Box props={{ state }} />
-        <Chat_Send props={{ setState }} />
+        <Chat_Send props={{ state, setState }} />
       </div>
       <div className="col-12 col-md-5 mt-md-5 mr-5 chat-large-right">
         <div className="col-12 chat-lang-select">
           <Chat_LangSelect props={{ state }} />
         </div>
-        <Chat_Buttons />
+        <Chat_Buttons props={props} />
       </div>
     </>
   );
