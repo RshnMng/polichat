@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Translation_Buttons(props) {
-  console.log(props.props.props.state, "translate buttons");
   const state = props.props.props.state;
   const fetchResponse = state.fetchResponse;
   const switchLangs = state.switchLangs;

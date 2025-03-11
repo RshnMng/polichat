@@ -5,14 +5,18 @@ import Translation_Page from "./pages/Translation_Page";
 import Chat_Page from "./pages/Chat_Page";
 import Chat_Message from "./components/chat_components/Chat_Message";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-// import OpenAI from "openai";
+import OpenAI from "openai";
 import "./App.css";
 
 function App() {
-  // const openai = new OpenAI({
-  //   apiKey: process.env.openai_key,
-  //   dangerouslyAllowBrowser: true,
-  // });
+  const apikey = import.meta.env.OPENAI_API_KEY;
+
+  console.log(apikey);
+
+  const openai = new OpenAI({
+    apiKey: apikey,
+    dangerouslyAllowBrowser: true,
+  });
 
   const [state, setState] = useState({
     userInput: "",
