@@ -1,0 +1,478 @@
+.app {
+  border: 6px solid #5F0D04;
+  background-color: #D99058;
+  min-height: 30px;
+  min-width: 375px;
+  max-width: 1000px;
+
+
+}
+
+#root {
+  background-color: #335c67;
+  padding-right: 3x;
+  padding-bottom: 3px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.body {
+  background-color: #335c67;
+}
+
+
+/* home stylings */
+
+.home-input,
+.translate-input {
+  min-height: 300px;
+}
+
+
+.home-input-row {
+  margin-top: 15px;
+}
+
+.home-buttons,
+.translation-buttons,
+.chat-buttons {
+  min-height: 100px;
+  background-color: #5F0D04;
+  padding: 40px;
+  border: 8px solid #A52A2A;
+  border-radius: 8px;
+}
+
+.header {
+  min-height: 100px;
+  background-image: url("https://i1.wp.com/matuloo.com/wp-content/uploads/2016/11/languages.jpg?fit=800%2C519");
+  background-position: center;
+  background-size: cover;
+  border-bottom: 3px solid #5F0D04;
+}
+
+.home-title,
+.translation-title,
+.input-title {
+  background-color: #D99058;
+  text-align: center;
+  font-size: 30px;
+  color: #e9d8a6;
+  font-weight: bold;
+  text-shadow: 10px 5px 12px black;
+}
+
+.home-lang-select {
+  min-height: 150px;
+  background-color: #335c67;
+  padding: 30px;
+  border-radius: 8px;
+  ;
+  border: 8px solid #588157;
+}
+
+
+.home-flag {
+  border: 3px solid green;
+  min-height: 100px;
+  aspect-ratio: 1/1;
+  max-width: 120px;
+}
+
+
+.main-textarea,
+.translation-textarea,
+.input-textarea {
+  min-height: 100px;
+  width: 100%;
+  max-width: 500px;
+  border: 5px solid green;
+  border-radius: 8px;
+  overflow: scroll;
+  background-color: #fefae0;
+  box-shadow: 0 0 19px 4px #621708;
+  font-family: Lora;
+  font-size: 22px;
+  color: #588157;
+  font-weight: 600;
+  flex-grow: 1;
+  padding-top: 35px;
+  padding-left: 35px;
+  display: block;
+}
+
+.main-textarea:focus {
+  outline: #588157
+}
+
+.translation-textarea:focus {
+  outline: #588157
+}
+
+.input-textarea:focus {
+  outline: #588157
+}
+
+.home-flag {
+  background-position: center;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #588157;
+  box-shadow: 0 0 18px 5px black;
+  background-size: cover;
+  margin-bottom: 25%;
+}
+
+.korean-flag {
+  background-image: url('https://c4.wallpaperflare.com/wallpaper/843/422/452/south-korea-flag-asian-korean-wallpaper-preview.jpg')
+}
+
+.roman-flag {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOKVRSAwUM-dhpjr6yQe25dawCGIw1XjGKMQ&s')
+}
+
+.italy-flag {
+  background-image: url('https://www.shutterstock.com/shutterstock/videos/3609798165/thumb/1.jpg?ip=x480')
+}
+
+.arabic-flag {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvNKw6gqYWI_4J4a4A_5NDkaXqm4HZ_XcuOA&s');
+}
+
+.chinese-flag {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGcqhC9QuPL8fbbE-WfIoNXKzqrb9OGZV-8w&s')
+}
+
+.japanese-flag {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyvSA_T74tXX0oWWazLGqCHirmwIf1yJJvcQ&s');
+}
+
+.french-flag {
+  background-image: url('https://static3.depositphotos.com/1006774/218/i/450/depositphotos_2182127-French-Flag-Waving-In-The-Wind.jpg');
+}
+
+.spanish-flag {
+  background-image: url("https://img.freepik.com/premium-photo/flag-spain-illustration-spanish-flag-waving_2227-735.jpg")
+}
+
+.russia-flag {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzPmD6WF4ZgzymTzoJSRKjtbpg2evQmty_DQ&s");
+}
+
+.english-flag {
+  background-image: url('https://w0.peakpx.com/wallpaper/173/443/HD-wallpaper-flag-of-usa-american-flag-silk-flag-silk-fabric-usa-flag-stars-on-us-flag.jpg');
+}
+
+.home-btn {
+  text-decoration: none;
+  margin-inline: auto;
+  font-size: 18px;
+  padding: .5rem;
+  border-radius: 10px;
+  border: 1px solid #588157;
+  background-color: #8ecae6;
+  color: #e9d8a6;
+  text-shadow: 0 0 9px #335c67;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.home-flex {
+  border: 4px solid magenta;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.home-input {
+  display: flex;
+}
+
+.home-flex-spacing {
+  background-color: pink;
+  min-height: 100%;
+  width: 100%;
+  flex-grow: 1;
+}
+
+
+.check {
+  flex-grow: 1;
+  min-height: .5px;
+}
+
+.footer {
+  background-color: #588157;
+  min-height: 50px;
+  border-top: 3px solid #5F0D04;
+}
+
+.flag-box {
+  width: 100%;
+  border-radius: 8px;
+  background-position: center;
+  background-size: cover;
+  display: block;
+  margin-left: auto;
+  margin-top: 5px;
+  min-height: 40px;
+  padding: 10px 15px;
+  max-width: 77px;
+  min-width: 50px;
+  cursor: pointer;
+  border: 1px solid #588157;
+  box-shadow: 0 0 22px 2px black;
+  font-size: 0;
+}
+
+.flag-box:focus {
+  outline: 1px solid #5F0D04;
+}
+
+
+.flagbox-div {
+  background-color: #335c67;
+  padding-bottom: 5px;
+  border-radius: 8px;
+  border: 4px solid #588157;
+  display: flex;
+  justify-content: center;
+  max-width: 80px;
+  margin-right: 20px;
+  padding-inline: 30px;
+
+}
+
+.home-text {
+  text-align: left;
+}
+
+
+/* Translation styles */
+
+.chat-flag {
+  width: 20%;
+  aspect-ratio: 4/3;
+  border: 1px solid #588157;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 18px 5px black;
+}
+
+.chat-lang-select {
+  border: 8px solid rgb(143, 47, 143);
+  background-color: rgb(94, 12, 94);
+  border-radius: 8px;
+  padding: 4%;
+  margin-inline: 4%;
+}
+
+.chatbox-container {
+  min-height: 25px;
+}
+
+.chat-label {
+  font-size: 26px;
+  color: #e9d8a6;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  text-shadow: 10px 5px 12px black;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.chat-container {
+  min-height: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.text-display {
+  border: 2px solid #588157;
+  border-radius: 8px;
+  width: 80%;
+  overflow: scroll;
+  padding: 15px;
+  background-color: #fefae0;
+  box-shadow: 0 0 19px 4px #621708;
+  position: relative;
+  flex-grow: 1;
+  min-height: 300px;
+  max-width: 550px;
+  margin-bottom: 50px;
+}
+
+
+
+.waiting {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 2;
+  animation-name: blinking;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes blinking {
+  from {
+    opacity: 1
+  }
+
+  to {
+    opacity: 0
+  }
+
+}
+
+.text-input {
+  width: 80%;
+  height: 50px;
+  border-radius: 8px;
+  margin-right: 8px;
+  margin-left: 25px;
+  border: 2px solid #588157;
+  background-color: #fefae0;
+  font-size: 18px;
+  padding: 5px 10px;
+  margin-bottom: 15px;
+  color: #588157;
+  position: relative;
+  max-width: 500px;
+  left: 7px;
+}
+
+#text-input:focus {
+  outline: 2px solid #588157;
+
+}
+
+.text-input-div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.send-button {
+  width: 3%;
+  height: 80%;
+  cursor: pointer;
+  position: relative;
+  min-width: 55px;
+  top: 1px;
+
+}
+
+.sent-by-user {
+  color: #3a5a40;
+  background-color: #e9edc9;
+  text-align: left;
+  padding-right: 7px;
+  margin-left: auto;
+
+
+}
+
+.sent-by-ai {
+  color: #bc6c25;
+  background-color: #faedcd;
+  text-align: left;
+  padding-left: 7px;
+  margin-right: auto;
+
+}
+
+.message-div {
+  border: 1px solid #588157;
+  font-size: 20px;
+  border-radius: 6px;
+  padding: 5px 10px;
+  display: inline-block;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.message-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.selected {
+  scale: 1.1;
+  box-shadow: 0 0 18px 5px #e9d8a6;
+}
+
+/* Media Queries */
+@media (min-width: 575px) {
+
+  .translation-title,
+  .input-title {
+    font-size: 33px;
+    margin-left: 70px;
+  }
+
+  .chat-flag {
+    width: 15%;
+  }
+
+  .chat-label {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 767px) {
+  .chat-lang-select {
+    margin-inline: 0;
+  }
+
+  .chat-flag {
+    width: 23%;
+    margin-inline: 2%;
+  }
+
+
+}
+
+@media (min-width: 767px) {
+  .chat-flag {
+    width: 45%;
+    height: 100px;
+    margin-bottom: 15px;
+  }
+
+  .chat-lang-select {
+    margin-inline: auto;
+    min-height: 200px;
+    display: flex;
+  }
+
+  .change-lang-div {
+    flex-wrap: wrap;
+  }
+
+
+}
+
+
+@media (min-width: 992px) {
+
+  .main-textarea,
+  .translation-textarea,
+  .input-textarea {
+    min-height: 200px;
+    min-width: 400px;
+  }
+
+}
